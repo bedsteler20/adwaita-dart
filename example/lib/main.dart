@@ -2,7 +2,10 @@ import 'package:adwaita/adwaita.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-void main() => runApp(MyApp());
+void main() {
+  AdwaitaColors.initialize();
+  runApp(MyApp());
+}
 
 class MyApp extends StatelessWidget {
   MyApp({Key? key}) : super(key: key);

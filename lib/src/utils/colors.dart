@@ -219,6 +219,7 @@ class AdwaitaColors {
         final color = _getColor(val, _colors);
         if (color != null) {
           _colors[name] = color;
+          _colors['dark_$name'] = color;
         }
       }
     }
