@@ -112,7 +112,7 @@ class AdwaitaThemeData {
         checkboxTheme: _checkStyleLight,
         radioTheme: _radioStyleLight,
         appBarTheme: _appBarLightTheme,
-        floatingActionButtonTheme: const FloatingActionButtonThemeData(
+        floatingActionButtonTheme: FloatingActionButtonThemeData(
           backgroundColor: AdwaitaColors.blueAccent,
         ),
         bottomNavigationBarTheme: BottomNavigationBarThemeData(
@@ -122,12 +122,12 @@ class AdwaitaThemeData {
         inputDecorationTheme: InputDecorationTheme(
           filled: true,
           fillColor: AdwaitaColors.button,
-          enabledBorder: const OutlineInputBorder(
+          enabledBorder:  const OutlineInputBorder(
             borderRadius: BorderRadius.all(Radius.circular(8)),
             borderSide: BorderSide(color: Colors.transparent),
           ),
-          focusedBorder: const OutlineInputBorder(
-            borderRadius: BorderRadius.all(
+          focusedBorder:  OutlineInputBorder(
+            borderRadius: const BorderRadius.all(
               Radius.circular(8),
             ),
             borderSide: BorderSide(
@@ -169,7 +169,7 @@ class AdwaitaThemeData {
         radioTheme: _radioStyleDark,
         primaryColorDark: AdwaitaColors.blueAccent,
         appBarTheme: _appBarDarkTheme,
-        floatingActionButtonTheme: const FloatingActionButtonThemeData(
+        floatingActionButtonTheme: FloatingActionButtonThemeData(
           backgroundColor: AdwaitaColors.blueAccent,
         ),
         bottomNavigationBarTheme: BottomNavigationBarThemeData(
@@ -183,8 +183,8 @@ class AdwaitaThemeData {
             borderRadius: BorderRadius.all(Radius.circular(8)),
             borderSide: BorderSide(color: Colors.transparent),
           ),
-          focusedBorder: const OutlineInputBorder(
-            borderRadius: BorderRadius.all(
+          focusedBorder:  OutlineInputBorder(
+            borderRadius: const BorderRadius.all(
               Radius.circular(8),
             ),
             borderSide: BorderSide(color: AdwaitaColors.blueAccent),
@@ -400,8 +400,8 @@ class AdwaitaThemeData {
     systemOverlayStyle: SystemUiOverlayStyle.light,
     backgroundColor: AdwaitaColors.headerBarBackground,
     foregroundColor: AdwaitaColors.headerBarForeground,
-    iconTheme: const IconThemeData(color: AdwaitaColors.dark3),
-    actionsIconTheme: const IconThemeData(color: AdwaitaColors.dark3),
+    iconTheme:  IconThemeData(color: AdwaitaColors.dark3),
+    actionsIconTheme:  IconThemeData(color: AdwaitaColors.dark3),
   );
 
   static final _appBarDarkTheme = AppBarTheme(
